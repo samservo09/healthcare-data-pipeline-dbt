@@ -13,3 +13,6 @@ The goal is to showcase how dbt can be leveraged to turn raw healthcare data int
 
 ## Demo
 This section will provide a demonstration of my project.
+
+## Resources
+This section will contain the resources I have used in this project.
