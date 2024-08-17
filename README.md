@@ -10,3 +10,6 @@ This mini-project demonstrates my knowledge of using dbt (data build tool) to bu
 
 ## Why?
 The goal is to showcase how dbt can be leveraged to turn raw healthcare data into actionable insights, enhancing data-driven decision-making in healthcare settings.
+
+## Demo
+This section will provide a demonstration of my project.
