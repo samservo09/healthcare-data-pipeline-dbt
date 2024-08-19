@@ -12,7 +12,7 @@ The goal is to showcase how dbt can be leveraged to turn raw healthcare data int
 
 ## Related project documents
 - [dbt project documentation](https://uw801.us1.dbt.com/accounts/70403103944800/runs/70403118391831/docs/#!/overview/my_new_project)
-- [LinkedIn Article]()
+- [LinkedIn Article](https://www.linkedin.com/posts/samantha-servo-43625b18a_learninpublic-beyondthevinculum-dataenginering-activity-7231280007837310976-IxJs?utm_source=share&utm_medium=member_desktop)
 
 ## Resources
 - [dbt Documentation](https://docs.getdbt.com/docs/introduction)
