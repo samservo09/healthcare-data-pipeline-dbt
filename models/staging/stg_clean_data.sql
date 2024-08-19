@@ -1,6 +1,8 @@
 -- Clean the dataset
 WITH cleaned_data AS (
     SELECT
+        -- Generate a consecutive patient ID
+        ROW_NUMBER() OVER () AS patient_id,  -- Generate consecutive numbers
         -- Remove prefixes and standardize capitalization
         INITCAP(REGEXP_REPLACE(TRIM(CAST(Name AS STRING)), r'^(Mr\.|Mrs\.|Ms\.|Dr\.|Prof\.|Rev\.)\s+', '')) AS patient_name,
         -- Extract first and last names from the cleaned name
@@ -64,6 +66,7 @@ numbered_data AS (
 
 -- Select distinct records, keeping only the first occurrence of each duplicate
 SELECT
+    patient_id,
     patient_name,
     patient_first_name,
     patient_last_name,

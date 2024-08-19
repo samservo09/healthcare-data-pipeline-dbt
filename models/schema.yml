@@ -2,8 +2,8 @@
 version: 2
 
 models:
-    - name: my_first_dbt_model
-      description: "A starter dbt model"
+    - name: stg_clean_data
+      description: "A staging model that will clean the healthcare dataset."
       columns:
           - name: id
             description: "The primary key for this table"
