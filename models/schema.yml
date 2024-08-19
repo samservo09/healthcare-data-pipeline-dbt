@@ -5,17 +5,41 @@ models:
     - name: stg_clean_data
       description: "A staging model that will clean the healthcare dataset."
       columns:
-          - name: id
+          - name: patient_id
             description: "The primary key for this table"
             tests:
                 - unique
                 - not_null
 
-    - name: my_second_dbt_model
-      description: "A starter dbt model"
+    - name: tr_data_aggregations
+      description: "Aggregated metrics from the healthcare dataset."
       columns:
-          - name: id
-            description: "The primary key for this table"
-            tests:
-                - unique
-                - not_null
+      - name: patient_gender
+        description: "Gender of the patient."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['Male', 'Female', 'Unknown']
+      - name: length_of_stay_days
+        description: "Number of days the patient stayed in the hospital."
+        tests:
+          - not_null
+      - name: patient_count
+        description: "Count of patients by gender."
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_healthcare_rename')
+              field: patient_gender
+      - name: average_billing_amount
+        description: "Average billing amount for each medical condition."
+        tests:
+          - not_null
+      - name: total_admissions
+        description: "Total number of admissions by hospital."
+        tests:
+          - not_null
+      - name: average_length_of_stay
+        description: "Average length of stay by admission type."
+        tests:
+          - not_null
