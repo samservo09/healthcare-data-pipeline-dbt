@@ -2,4 +2,4 @@
 
 SELECT *
 FROM {{ model }}
-WHERE average_length_of_stay < 0
+WHERE {{ column }} < 0
