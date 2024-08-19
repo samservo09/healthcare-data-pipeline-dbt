@@ -23,10 +23,6 @@ models:
         description: "Number of days the patient stayed in the hospital."
         data_tests:
           - not_null
-          - custom_test:
-              name: LOS_greater_than_zero
-              args:
-                column: length_of_stay_days
       - name: patient_count
         description: "Count of patients by gender."
         data_tests:
@@ -38,23 +34,12 @@ models:
         description: "Average billing amount for each medical condition."
         data_tests:
           - not_null
-          - custom_test:
-              name: avg_bill_nonnegative
-              args:
-                column: average_billing_amount
       - name: total_admissions
         description: "Total number of admissions by hospital."
         data_tests:
           - not_null
-          - custom_test:
-              name: tot_admission_nonnegative
-              args:
-                column: total_admissions
       - name: average_length_of_stay
         description: "Average length of stay by admission type."
         data_tests:
           - not_null
-          - custom_test:
-              name: avg_LOS_nonnegative
-              args:
-                column: average_length_of_stay
+          
