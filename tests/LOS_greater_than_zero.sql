@@ -2,4 +2,4 @@
 
 SELECT *
 FROM {{ model }}
-WHERE length_of_stay_days < 0
+WHERE {{ column }} < 0

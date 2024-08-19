@@ -2,4 +2,4 @@
 
 SELECT *
 FROM {{ model }}
-WHERE total_admissions < 0
+WHERE {{ column }} < 0

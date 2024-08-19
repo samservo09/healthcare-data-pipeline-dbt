@@ -2,4 +2,4 @@
 
 SELECT *
 FROM {{ model }}
-WHERE average_billing_amount < 0
+WHERE {{ column }} < 0
