@@ -6,7 +6,6 @@ This mini-project demonstrates my knowledge of using dbt (data build tool) to bu
 **Data Models**: Staging and transformation models to clean, aggregate, and analyze raw patient data. <br>
 **Testing**: Implemented dbt tests to ensure data quality and integrity. <br>
 **Documentation**: Comprehensive documentation of data models and transformations. <br>
-**Deployment**: Instructions for deploying and scheduling dbt runs in a production environment. <br>
 
 ## Why?
 The goal is to showcase how dbt can be leveraged to turn raw healthcare data into actionable insights, enhancing data-driven decision-making in healthcare settings.
