@@ -15,4 +15,7 @@ The goal is to showcase how dbt can be leveraged to turn raw healthcare data int
 This section will provide a demonstration of my project.
 
 ## Resources
-This section will contain the resources I have used in this project.
+- dbt Documentation [https://docs.getdbt.com/docs/introduction]
+- Getting started with dbt [https://www.youtube.com/watch?v=6zDTbM6OUcs]
+- dbt crash course for beginners [https://www.youtube.com/watch?v=C6BNAfaeqXY&t=793s]
+- Healthcare dataset from Kaggle [https://www.kaggle.com/datasets/prasad22/healthcare-dataset]
